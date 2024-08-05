@@ -67,13 +67,6 @@ time.sleep(1)
 print("\n\t*****BALANCE SHEET*****")
 def account_balance(request_spending, account_id):
     accountBalance = request_spending[f"{account_id}"]["balance"]
-    
-    #THIS SHOULD BE USED IF GIVEN BALANCE IS INITIAL BALANCE AND NOT BALANCE
-    '''transactionList = request_spending[f"{account_id}"]["transactions"]
-    transactionList = list(map(lambda dtn: dtn["amount"], transactionList))
-    transactionList = list(filter(lambda value: value>=0, transactionList))
-    accountBalance = request_spending[f"{account_id}"]["balance"] + sum(transactionList)'''
-    
     return f"Account ID: {account_id}\tBalance: {accountBalance}"
 
 print(account_balance(request_spending, "Mahek"))
