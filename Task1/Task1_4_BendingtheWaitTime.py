@@ -2,7 +2,8 @@
 #customers = [[6,2],[5,4],[10,3],[20,1]] #SORTING IMPROVES WAITING TIME
 #customers = [[5,2],[5,4],[10,3],[20,1]]
 #customers = [[1,5],[7,6],[10,3],[16,4]]
-customers = [[7,5],[10,7],[19,3],[20,6],[20,5]] #SORTING IMPROVES WAITING TIME
+#customers = [[7,5],[10,7],[19,3],[20,6],[20,5]] #SORTING IMPROVES WAITING TIME
+customers = [[5,7],[5,6],[10,14],[20,21]] #SORTING IMPROVES WAITING TIME
 
 totalTime = 0
 waitingTime = []
