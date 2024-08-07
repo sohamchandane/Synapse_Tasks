@@ -80,10 +80,10 @@ print("\n\t*****MONEY OWED*****")
 def money_owed(request_spending, account_id):
     transactionList = request_spending[f"{account_id}"]["transactions"]
     transactionList = list(map(lambda dtn: dtn["amount"], transactionList))
-    moneyOwed = request_spending[f"{account_id}"]["balance"] + sum(transactionList)
+    moneyOwed = -1*sum(transactionList)
     
-    if moneyOwed>0:
-        return f"Money Owed by {account_id}: 0"
+    '''if moneyOwed>0:
+        return f"Money Owed by {account_id}: 0"'''
     return f"Money Owed by {account_id}: {math.fabs(moneyOwed)}"
 
 print(money_owed(request_spending, "Mahek"))
